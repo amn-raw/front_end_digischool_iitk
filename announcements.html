@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="lectures.css">
+    <link rel="stylesheet" href="announcements.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/343524fab9.js" crossorigin="anonymous"></script>
+   </head>
+<body>
+  <nav class="navbar">
+    <!-- LOGO -->
+    <div class="logo"></div>
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+
+    <!-- NAVIGATION MENUS -->
+    <div class="menu">
+    <li><a href="homepage.html" style="color: white">Home</a></li>
+    <li class="services">
+    <a  class="profile-top" href="homepage.html"><img src="profile_photo.jpg" alt="Profile" style="width:48px;height:48px;"> </a>
+    
+    <!-- DROPDOWN MENU -->
+    <ul class="dropdown">
+    <li><a class="logout" href="index.html">Log out</a></li>
+
+    </ul>
+    </li>
+
+    </div>
+
+    </ul>
+
+    </nav>
+
+        <!-- side  NAVIGATION MENUS -->
+  <div class="sidebar">
+    <div class="logo-details">
+        <div class="logo_name">Dashboard</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+       <a href="homepage.html">
+        <i class='bx bxs-home'></i>
+         <span class="links_name">Home</span>
+       </a>
+       <span class="tooltip">Home</span>
+     </li>
+     <li>
+       <a href="lectures.html">
+        <i class='bx bxs-book-open'></i>
+        
+         <span class="links_name">Lecture Materials</span>
+       </a>
+       <span class="tooltip">Lecture Materials</span>
+     </li>
+     <li>
+       <a href="test.html">
+        <i class='bx bx-question-mark'></i>
+         <span class="links_name">Tests</span>
+       </a>
+       <span class="tooltip">Tests</span>
+     </li>
+     <li>
+       <a href="#">
+        <i class='bx bxs-report'></i>
+         <span class="links_name">Progress Report</span>
+       </a>
+       <span class="tooltip">Progress resport</span>
+     </li>
+     <li>
+       <a href="#">
+        <i class='bx bxs-comment-detail' ></i>
+         <span class="links_name">Forum</span>
+       </a>
+       <span class="tooltip">Forum</span>
+     </li>
+     <li>
+       <a href="contact_us.html">
+        
+        <i class='bx bx-chat' ></i>
+         <span class="links_name">Feedback</span>
+       </a>
+       <span class="tooltip">Feedback</span>
+     </li>
+     <li>
+       <a href="index.html">
+        <i class='bx bx-exit'></i>
+         <span class="links_name">Logout</span>
+       </a>
+       <span class="tooltip">Logout</span>
+     </li>
+     
+    </ul>
+  </div>
+
+
+  
+        <!-- Student profile in home page with photo and details -->
+  <div class="main">
+      <div class="announcement-page-heading">
+          Announcements
+      </div>
+      <div class="accordion">
+                <div class="content-box">
+                    <div class="title">
+                        Quiz 3
+                    </div>
+                    <div class="announcement">
+                        <p>Students Quiz 3 will be on 25th of Jan.</p>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <div class="title">
+                        Assignment 3 Deadline Extension
+                    </div>
+                    <div class="announcement">
+                        <p>Students assignment3 Deadline has been extended to 31st of March</p>
+                    </div>
+                </div>
+                <div class="content-box ">
+                    <div class="title">
+                        Quiz 4
+                    </div>
+                    <div class="announcement">
+                        <p>Students Quiz 4 will be on 25th of Jan.</p>
+                    </div>
+                </div>
+        </div>
+  </div>
+
+
+
+ 
+<script>
+  var accordion = document.getElementsByClassName('content-box');
+  for(i=0;i<accordion.length;i++){
+    accordion[i].addEventListener('click',function(){
+      this.classList.toggle('active-announcement')
+    })
+  }
+
+
+  
+ 
+</script>
+
+  <script src="lectures.js"></script>
+</body>
+</html>
